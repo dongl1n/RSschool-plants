@@ -7,6 +7,7 @@
 
 a{
     text-decoration: none;
+    color: #000;
 }
 
 ul, ol, li{
@@ -346,14 +347,113 @@ html, body{
 }
 
 .main__price-right{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
     margin-left: 438px;
 }
 
 ._right{
     width: 452px;
+    text-align: end;
     margin-bottom: 38px;
 }
 
-
 .main__price-btn{
+    display: block;
+    margin-bottom: 39px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+.main__price-image{
+    display: block;
+    width: 152px;
+    height: 174px;
+    margin-bottom: 115px;
+}
+
+.main__contact{
+    display: flex;
+    flex-direction: row;
+    margin-top: 53px;
+}
+
+.main__contact-left{
+    flex: 1 1 auto;
+}
+
+.main__contact-header{
+    width: 195px;
+    text-align: center;
+}
+
+.main__contact-image{
+    width: 400px;
+    height: 497px;
+}
+
+.main__contact-right{
+    display: flex;
+    justify-content: end;
+    flex: 1 1 auto;
+}
+.main__contact-select{
+    display: flex;
+    align-items: center;
+    width: 450px;
+    height: 50px;
+    margin-top: 64px;
+    padding: 5px 0px 5px 20px;
+    background: right no-repeat #D6E7D2 url(assets/img/accordion_btn_2.svg);
+    background-position: 395px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+    font-weight: 400;
+    font-size: 20px;
+    color: #717171;
+}
+
+.footer__content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1220px;
+    margin: 0 100vw;
+    padding: 40px 0px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #000000;
+}
+
+.footer__left{
+    display: flex;
+    flex-direction: row;
+
+}
+
+._left-items:not(:last-child){
+    padding-right: 20px;
+}
+
+.footer__center{
+    flex: 1 1 auto;
+}
+
+.footer_RS{
+    margin-left: 324px;
+}
+
+.footer__right{
+    
+}
+
+.footer_media-list{
+    display: flex;
+    flex-direction: row;
+}
+
+.footer__media-item:not(:last-child){
+    margin-right: 20px;
 }
