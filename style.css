@@ -124,16 +124,18 @@ html, body{
 
 .main__welcome-text{
     width: 525px;
-    margin-top: 42px;
+    padding-top: 42px;
     font-weight: 400;
     font-size: 20px;
     font-size: 20px;
     line-height: 35px;
     color: #636060;
-    margin-bottom: 48px;
+    padding-bottom: 60px;
 }
 
 .main__welcome-button{
+    width: 158px;
+    height: 44px;
     padding: 14px 27px;
     font-weight: 400;
     color: #000;
