@@ -48,14 +48,14 @@ html, body{
 
 .header{
     background: #EDF2EC;
-    padding-bottom: 62px;
 }
 
 .header__container{
     display: flex;
     flex-direction: row;
+    height: 50px;
     margin-top: 52px;
-    margin-bottom: 62px;
+    margin-bottom: 120px;
     font-family: Inika;
 }
 
@@ -99,16 +99,16 @@ html, body{
     flex-direction: row;
     align-items: center;
     vertical-align: middle;
-    gap: 224px;
     background: #EDF2EC;
 }
 
 .main__text-welcome-container{
     height: 340px;
+    margin-left: 225px;
     margin-bottom: 94px;
 }
 .main__img-welcome{
-    width: 448;
+    width: 449;
     height: 407;
 }
 
@@ -162,7 +162,7 @@ html, body{
     vertical-align: middle;
     width: 1220px;
     margin: 0 100vw;
-    padding: 0 15px;
+    /*padding: 0 15px;*/
     gap: 153px;
 }
 
