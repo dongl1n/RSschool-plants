@@ -55,7 +55,7 @@ html, body{
     display: flex;
     flex-direction: row;
     height: 50px;
-    margin-top: 52px;
+    margin-top: 57px;
     margin-bottom: 85px;
     font-family: Inika;
 }
@@ -68,7 +68,6 @@ html, body{
 .header__logo-img{
     width: 20px;
     height: 20px;
-    vertical-align: top;
 }
 
 .header__nav-list{
@@ -119,6 +118,7 @@ html, body{
 
 .main__welcome{
     display: flex;
+    margin-bottom: 50px;
     flex-direction: row;
     vertical-align: middle;
     background: #EDF2EC;
@@ -158,8 +158,8 @@ html, body{
 
 .main__welcome-button{
     width: 158px;
-    height: 44px;
-    padding: 14px 27px;
+    height: 45px;
+    padding: 10px 25px;
     font-weight: 400;
     color: #000;
     text-transform: uppercase;
@@ -209,6 +209,7 @@ html, body{
     font-style: normal;
     font-weight: 400;
     font-size: 40px;
+    
     color: #499A18;
 }
 
@@ -221,6 +222,7 @@ html, body{
     margin-top: 40px;
     font-weight: 400;
     font-size: 20px;
+    line-height: 30px;
 }
 
 .main__img-about{
@@ -233,6 +235,7 @@ html, body{
 .main__service{
     display: flex;
     flex-direction: column;
+    margin-bottom: 116px;
 }
 
 .main__service-top{
@@ -244,12 +247,23 @@ html, body{
 
 .main__service-header{
     width: 306px;
-    margin-right: 158px;
+    margin-right: 142px;
 }
 
+.main__service-buttons{
+    display: flex;
+    justify-content: center;
+}
 .main__service-btn-list{
     display: flex;
     flex-direction: row;
+    flex: 1 auto;
+}
+
+.main__service-btn-item{
+    width: 161px;
+    height: 50px;
+    justify-items: bottom;
 }
 
 ._btn{
@@ -275,11 +289,10 @@ html, body{
     grid-template-columns: 1fr 1fr 1fr; 
     grid-template-rows: 1fr 1fr; 
     gap: 55px 116px; 
-    margin-top: 57px;
+    margin-top: 80px;
 }
 
 .main__service-card{
-    margin-bottom: 89px;
     border-radius: 0px 0px 20px 20px;
 }
 
@@ -319,7 +332,7 @@ html, body{
 }
 
 .main__service-card-header{
-    padding: 10px 0px;
+    margin-top:  8px;
     text-align: center;
     font-weight: 700;
     font-size: 20px;
@@ -328,6 +341,7 @@ html, body{
 }
 
 .main__service-card-text{
+    margin-top:  12px;
     padding-bottom: 36px;
     text-align: center;
     font-weight: 400;
@@ -337,7 +351,7 @@ html, body{
 }
 
 .main_wrapper_price{
-        padding: 40px 0;
+        padding: 40px 0px 0px 0px;
 }
 
 .main__price{
@@ -355,7 +369,6 @@ html, body{
 .main__price-select-wrapper{
     display: grid;
     justify-content: left;
-    gap: 23px 0px; 
     margin-top: 60px;
     padding: 34px 41px;
     border: 1px solid #E3E1D5;
@@ -365,16 +378,19 @@ html, body{
 .main__price-select{
     width: 250px;
     height: 50px;
-    padding: 16px 0px 16px 0px;
+    padding: 16px 0px 16px 40px;
     font-weight: 700;
     font-size: 20px;
-    text-align: center;
     color:#000;
     appearance: none;
-    background: right no-repeat #EDF2EC url(assets/img/accordion_btn.png);
+    background: right no-repeat #EDF2EC url(assets/img/accordion_btn.svg);
     background-position: 194px;
     border-radius: 20px;
     
+}
+
+.main__price-select:not(:last-child){
+    margin-bottom: 32px;
 }
 
 .main__price-right{
@@ -387,12 +403,18 @@ html, body{
 ._right{
     width: 452px;
     text-align: end;
-    margin-bottom: 38px;
+    margin-bottom: 43px;
 }
 
 .main__price-btn{
-    display: block;
+    display: flex;
+    justify-content: center;
+    width: 162px;
+    height: 50px;
     margin-bottom: 39px;
+    font-family: 'Inika';
+    font-size: 20px;
+    line-height: 26px;
     font-weight: 700;
     white-space: nowrap;
 }
@@ -402,7 +424,7 @@ html, body{
     display: block;
     width: 152px;
     height: 174px;
-    margin-bottom: 115px;
+    margin-bottom: 118px;
 }
 
 .main__contact{
@@ -417,6 +439,7 @@ html, body{
 
 .main__contact-header{
     width: 195px;
+    height: 51px;
     text-align: center;
 }
 
@@ -425,11 +448,18 @@ html, body{
     height: 497px;
 }
 
+.main__contact-center{
+    margin-top: 8px;
+    margin-left: 45px;
+}
+
 .main__contact-right{
     display: flex;
     justify-content: end;
+    margin-top: 30px;
     flex: 1 1 auto;
 }
+
 .main__contact-select{
     display: flex;
     align-items: center;
@@ -452,7 +482,7 @@ html, body{
     justify-content: space-around;
     width: 1220px;
     margin: 0 100vw;
-    padding: 40px 0px;
+    padding: 52px 0px;
     font-weight: 400;
     font-size: 20px;
     color: #000000;
@@ -473,10 +503,11 @@ html, body{
 }
 
 .footer_RS{
-    margin-left: 324px;
+    margin-left: 340px;
 }
 
 .footer__right{
+    align-self: flex-start;
     
 }
 
