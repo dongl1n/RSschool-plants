@@ -80,7 +80,29 @@ html, body{
     font-weight: 400;
 }
 
-.header__nav-list > .selected{
+
+
+._home:hover{
+    color: #E06733;
+    font-weight: 700;
+}
+
+._price:hover{
+    color: #E06733;
+    font-weight: 700;
+}
+
+._about:hover{
+    color: #E06733;
+    font-weight: 700;
+}
+
+._service:hover{
+    color: #E06733;
+    font-weight: 700;
+}
+
+._contact:hover{
     color: #E06733;
     font-weight: 700;
 }
@@ -142,10 +164,13 @@ html, body{
     text-transform: uppercase;
     border: 2px solid #E06733;
     border-radius: 10px;
+    transition: color, 800ms;
 }
 
+
 .main__welcome-button:hover{
-    border: 2px solid #ffa680;
+    color: white;
+    background-color: #E06733;
 }
 
 .main_wrapper_about{
@@ -231,6 +256,7 @@ html, body{
     color: #E06733;
     border: 1px solid #E06733;
     border-radius: 5px;
+    transition: color, 800ms;
 }
 
 .main__service-btn-item:not(:last-child){
@@ -238,8 +264,8 @@ html, body{
 }
 
 ._btn:hover{
-    color: #ffa680;
-    border: 1px solid #ffa680;
+    color: white;
+    background-color: #E06733;
 }
 
 .main__service-grid{
